@@ -9,9 +9,11 @@ require 'faker'
 #end
 
 #5.times do |index|
-	categorie = Categorie.create!(name: "Nom#{index}")
-end
+	#categorie = Categorie.create!(name: Faker::Name.first_name)
+#end
 
 15.times do |index|
 	commentaire = Commentaire.create!(content: "Texte#{index}")
+	like = Like.create!()
 end
+
