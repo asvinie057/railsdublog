@@ -8,6 +8,10 @@ require 'faker'
 #article = Article.create!(title: "Titre#{index}", content: "Texte#{index}",user_id: user.id)
 #end
 
-5.times do |index|
+#5.times do |index|
 	categorie = Categorie.create!(name: "Nom#{index}")
+end
+
+15.times do |index|
+	commentaire = Commentaire.create!(content: "Texte#{index}")
 end
